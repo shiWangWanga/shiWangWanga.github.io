@@ -1,1 +1,1 @@
-ww pages
+this is my personal pages
