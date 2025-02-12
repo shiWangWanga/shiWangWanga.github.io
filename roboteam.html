@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roboteam Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>Roboteam Details</h1>
+            <div class="nav-links">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Roboteam 详情内容 -->
+    <section id="roboteam" class="page-section">
+        <h2 class="section-title">Roboteam Experience</h2>
+        <div class="timeline">
+            <!-- 2021 ROBOCON -->
+            <div class="timeline-item" id="2021robocon">
+                <h3>2021 ROBOCON</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./pics/robocon2021-2.jpg" alt="2021 ROBOCON Team">
+                        <div class="image-info">
+                            <p>团队合影 · 2021.05</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./pics/robocon2021-1.jpg" alt="2021 ROBOCON Robot">
+                        <div class="image-info">
+                            <p>机器人调试 · 2021.06</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="description">2021年是我加入ROBOCON的第一年，团队合作和机器人设计让我深刻体会到工程实践的乐趣。</p>
+            </div>
+
+            <!-- 2022 ROBOCON -->
+            <div class="timeline-item" id="2022robocon">
+                <h3>2022 ROBOCON</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./pics/robocon2022-1.jpg" alt="2022 ROBOCON Competition">
+                        <div class="image-info">
+                            <p>比赛现场 · 2022.07</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./pics/robocon2022-2.jpg" alt="2022 ROBOCON Award">
+                        <div class="image-info">
+                            <p>获奖时刻 · 2022.07</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="description">2022年我们团队在全国赛中取得了优异成绩，这段经历让我更加坚定了对机器人技术的热爱。</p>
+            </div>
+
+            <!-- 2023 ROBOCON -->
+            <div class="timeline-item" id="2023robocon">
+                <h3>2023 ROBOCON</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./pics/robocon2023-1.jpg" alt="2023 ROBOCON Design">
+                        <div class="image-info">
+                            <p>机器人设计 · 2023.04</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./pics/robocon2023-2.jpg" alt="2023 ROBOCON Teamwork">
+                        <div class="image-info">
+                            <p>团队讨论 · 2023.05</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="description">2023年我担任团队队长，带领大家完成了更具挑战性的任务，团队精神在这一年得到了充分体现。</p>
+            </div>
+
+            <!-- 2024 ROBOCON -->
+            <div class="timeline-item" id="2024robocon">
+                <h3>2024 ROBOCON</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./pics/robocon2024-1.jpg" alt="2024 ROBOCON Preparation">
+                        <div class="image-info">
+                            <p>备赛现场 · 2024.03</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./pics/robocon2024-2.jpg" alt="2024 ROBOCON Final">
+                        <div class="image-info">
+                            <p>决赛时刻 · 2024.07</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="description">2024年是我本科的最后一年，ROBOCON不仅让我收获了技术，更让我懂得了坚持和团队合作的意义。</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 页面滚动动画
+        window.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.gallery-item, .timeline-item');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>Painting Details</h1>
+            <div class="nav-links">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Painting 详情内容 -->
+    <section id="painting" class="page-section" style="background: var(--light-bg)">
+        <h2 class="section-title">Painting</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" id="painting20170819">
+                <img src="./pics/painting20170819.png" alt="Abstract Art">
+                <div class="image-info">
+                    <h3>Abstract Art</h3>
+                    <p>2023.07</p>
+                </div>
+            </div>
+            <div class="gallery-item" id="painting20210830">
+                <img src="./pics/painting20210830.jpg" alt="Landscape">
+                <div class="image-info">
+                    <h3>Landscape</h3>
+                    <p>2023.04</p>
+                </div>
+            </div>
+            <div class="gallery-item" id="painting20220201">
+                <img src="./pics/painting20220201.jpg" alt="Abstract Art">
+                <div class="image-info">
+                    <h3>Abstract Art</h3>
+                    <p>2023.07</p>
+                </div>
+            </div>
+            <div class="gallery-item" id="painting20240223">
+                <img src="./pics/painting20240223.png" alt="Abstract Art">
+                <div class="image-info">
+                    <h3>Abstract Art</h3>
+                    <p>2023.07</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 页面滚动动画
+        window.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.gallery-item');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

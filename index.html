@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- 欢迎标语 -->
+    <div class="welcome-screen">
+        <h1>Welcome to my space</h1>
+    </div>
+
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
             <h1>Creative Portfolio</h1>
             <div class="nav-links">
-                <a href="#roboteam">Roboteam</a>
-                <a href="#music">Music</a>
-                <a href="#photography">Photography</a>
-                <a href="#painting">Painting</a>
+                <a href="research.html">Research</a>
+                <a href="roboteam.html">Roboteam</a>
+                <a href="music.html">Music</a>
+                <a href="photography.html">Photography</a>
+                <a href="painting.html">Painting</a>
             </div>
         </div>
     </nav>
+
+    <!-- Research 部分 -->
+    <section id="research" class="page-section" style="background: var(--light-bg)">
+        <h2 class="section-title">Scientific Research</h2>
+        <p class="research-intro">在科研领域，我致力于探索各种有趣的课题，不断挑战自我，追求知识的边界。以下是我一些精选的研究项目和成果展示。</p>
+        <div class="gallery-grid">
+            <!-- Aerospace Gripper -->
+            <div class="gallery-item clickable" onclick="window.location.href='research.html#photo1'">
+                <img src="./pics/gripper.png" alt="Aerospace Gripper">
+                <div class="image-info">
+                    <h3>Aerospace Gripper</h3>
+                    <p>Shanghai · 2024.09</p>
+                </div>
+            </div>
+            <!-- Resilient Machine -->
+            <div class="gallery-item clickable" onclick="window.location.href='research.html#project1'">
+                <img src="./pics/drone.png" alt="Resilient Machine">
+                <div class="image-info">
+                    <h3>Resilient Machine</h3>
+                    <p>Shanghai · 2025.01</p>
+                </div>
+            </div>
+            <!-- Origami Machine -->
+            <div class="gallery-item clickable" onclick="window.location.href='research.html#project2'">
+                <img src="./pics/origami.png" alt="Origami Machine">
+                <div class="image-info">
+                    <h3>Origami Machine</h3>
+                    <p>Guangzhou · 2024.12</p>
+                </div>
+            </div>
+        </div>
+        <div class="research-details">
+            <h3>研究项目详细介绍</h3>
+            <div class="research-item">
+                <h4>Aerospace Gripper</h4>
+                <p>该项目聚焦于城市几何形态的研究，通过实地考察和数据分析，探索城市空间的布局规律和发展趋势。在上海进行的实地调研中，我们收集了大量的城市几何数据，运用先进的算法和模型进行分析，为城市规划和设计提供了有价值的参考。</p>
+            </div>
+            <div class="research-item">
+                <h4>Resilient Machine</h4>
+                <p>在环境科学研究项目中，我们关注于环境污染的监测和治理。通过在不同地区设置监测点，实时收集环境数据，分析环境污染的来源和分布规律。同时，我们还开展了一系列的治理实验，探索有效的环境污染治理方法。</p>
+            </div>
+            <div class="research-item">
+                <h4>Origami Machine</h4>
+                <p>此项目旨在探索人工智能技术在医疗领域的应用潜力。我们利用深度学习算法对大量的医疗影像数据进行分析，开发出了一套智能诊断系统，能够快速准确地诊断疾病。该系统在临床实践中取得了良好的效果，为医疗行业的发展带来了新的机遇。</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Roboteam 页面 -->
     <section id="roboteam" class="page-section">
         <h2 class="section-title">Roboteam Experience</h2>
         <div class="timeline">
             <!-- 2021 ROBOCON -->
-            <div class="timeline-item">
+            <div class="timeline-item clickable" onclick="window.location.href='roboteam.html#2021robocon'">
                 <h3>2021 ROBOCON</h3>
                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <img src="./pics/robocon2021-2.jpg" alt="2021 ROBOCON Team">
                         <div class="image-info">
-                            <p>团队合影 · 2021.05</p>
+                            <p>比赛开幕 · 2021.05</p>
                         </div>
                     </div>
                     <div class="gallery-item">
@@ -45,7 +100,7 @@
             </div>
 
             <!-- 2022 ROBOCON -->
-            <div class="timeline-item">
+            <div class="timeline-item clickable" onclick="window.location.href='roboteam.html#2022robocon'">
                 <h3>2022 ROBOCON</h3>
                 <div class="gallery-grid">
                     <div class="gallery-item">
@@ -65,7 +120,7 @@
             </div>
 
             <!-- 2023 ROBOCON -->
-            <div class="timeline-item">
+            <div class="timeline-item clickable" onclick="window.location.href='roboteam.html#2023robocon'">
                 <h3>2023 ROBOCON</h3>
                 <div class="gallery-grid">
                     <div class="gallery-item">
@@ -85,17 +140,17 @@
             </div>
 
             <!-- 2024 ROBOCON -->
-            <div class="timeline-item">
+            <div class="timeline-item clickable" onclick="window.location.href='roboteam.html#2024robocon'">
                 <h3>2024 ROBOCON</h3>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="robocon2024-1.jpg" alt="2024 ROBOCON Preparation">
+                        <img src="./pics/robocon2024-1.jpg" alt="2024 ROBOCON Preparation">
                         <div class="image-info">
                             <p>备赛现场 · 2024.03</p>
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="robocon2024-2.jpg" alt="2024 ROBOCON Final">
+                        <img src="./pics/robocon2024-2.jpg" alt="2024 ROBOCON Final">
                         <div class="image-info">
                             <p>决赛时刻 · 2024.07</p>
                         </div>
@@ -106,12 +161,12 @@
         </div>
     </section>
 
-    <!-- Music 页面 -->
+    <!-- Music 精选部分 -->
     <section id="music" class="page-section" style="background: var(--light-bg)">
         <h2 class="section-title">Music Journey</h2>
         <div class="music-container">
-            <!-- 钢琴演奏 -->
-            <div class="music-item">
+            <!-- 钢琴演奏作为精选展示 -->
+            <div class="music-item clickable" onclick="window.location.href='music.html#piano'">
                 <h3>钢琴演奏</h3>
                 <div class="gallery-grid">
                     <div class="gallery-item">
@@ -122,84 +177,38 @@
                     </div>
                     <div class="gallery-item">
                         <video controls>
-                            <source src="piano-video.mp4" type="video/mp4">
+                            <source src="videos/piano-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                 </div>
                 <p class="description">钢琴是我生活中不可或缺的一部分，它让我在忙碌的学习中找到内心的平静。</p>
             </div>
-
-            <!-- 偶像作品 -->
-            <div class="music-item">
-                <h3>偶像作品</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="hua-chenyu.jpg" alt="华晨宇演唱会">
-                        <div class="image-info">
-                            <p>华晨宇演唱会 · 2023.08</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="g-e-m.jpg" alt="邓紫棋专辑">
-                        <div class="image-info">
-                            <p>邓紫棋专辑收藏 · 2023.12</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="description">华晨宇和邓紫棋的音乐给了我很多灵感，他们的作品让我感受到音乐的力量。</p>
-            </div>
         </div>
     </section>
 
-    <!-- Photography 页面 -->
+    <!-- Photography 精选部分 -->
     <section id="photography" class="page-section">
         <h2 class="section-title">Photography</h2>
         <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="./pics/photo1.jpg" alt="Urban Geometry">
+            <!-- 精选一张照片 -->
+            <div class="gallery-item clickable" onclick="window.location.href='photography.html#photo1'">
+                <img src="./pics/photo2.jpg" alt="Urban Geometry">
                 <div class="image-info">
                     <h3>Urban Geometry</h3>
                     <p>Shanghai · 2023.08</p>
                 </div>
             </div>
-            <div class="gallery-item">
-                <img src="./pics/photo2.jpg" alt="Nature's Light">
-                <div class="image-info">
-                    <h3>Nature's Light</h3>
-                    <p>Hangzhou · 2023.05</p>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Painting 页面 -->
+    <!-- Painting 精选部分 -->
     <section id="painting" class="page-section" style="background: var(--light-bg)">
         <h2 class="section-title">Painting</h2>
         <div class="gallery-grid">
-            <div class="gallery-item">
+            <!-- 精选一张画作 -->
+            <div class="gallery-item clickable" onclick="window.location.href='painting.html#painting20170819'">
                 <img src="./pics/painting20170819.png" alt="Abstract Art">
-                <div class="image-info">
-                    <h3>Abstract Art</h3>
-                    <p>2023.07</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="./pics/painting20210830.jpg" alt="Landscape">
-                <div class="image-info">
-                    <h3>Landscape</h3>
-                    <p>2023.04</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="./pics/painting20220201.jpg" alt="Abstract Art">
-                <div class="image-info">
-                    <h3>Abstract Art</h3>
-                    <p>2023.07</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="./pics/painting20240223.png" alt="Abstract Art">
                 <div class="image-info">
                     <h3>Abstract Art</h3>
                     <p>2023.07</p>
@@ -232,4 +241,5 @@
         });
     </script>
 </body>
+
 </html>

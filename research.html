@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>Research Details</h1>
+            <div class="nav-links">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Research 详情内容 -->
+    <section id="research" class="page-section">
+        <h2 class="section-title">Scientific Research</h2>
+        <p class="research-intro">在科研领域，我致力于探索各种有趣的课题，不断挑战自我，追求知识的边界。以下是我详细的研究项目和成果展示。</p>
+        <div class="gallery-grid">
+            <!-- 研究项目1 -->
+            <div class="gallery-item" id="photo1">
+                <img src="./pics/photo1.jpg" alt="Urban Geometry">
+                <div class="image-info">
+                    <h3>Urban Geometry</h3>
+                    <p>Shanghai · 2023.08</p>
+                </div>
+            </div>
+            <!-- 研究项目2 -->
+            <div class="gallery-item" id="project1">
+                <img src="./pics/research_project1.jpg" alt="Research Project 1">
+                <div class="image-info">
+                    <h3>环境科学研究</h3>
+                </div>
+            </div>
+            <!-- 研究项目3 -->
+            <div class="gallery-item" id="medical_ai">
+                <img src="./pics/medical_ai.jpg" alt="Medical AI">
+                <div class="image-info">
+                    <h3>人工智能在医疗领域的应用</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 页面滚动动画
+        window.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.gallery-item, .research-item');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
