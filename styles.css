@@ -56,7 +56,6 @@
 /* 页面公共样式 */
 .page-section {
     padding: 4rem 2rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,31 +83,22 @@
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    transition: transform 0.3s, opacity 0.6s;
-    opacity: 0;
-    transform: translateY(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 让内容靠左对齐 */
 }
 
     .gallery-item img,
     .timeline-item img,
     .music-item img {
-        width: 100%;
         height: 300px;
+        width: 100%; /* 让图片宽度撑满容器，去除留白 */
         object-fit: cover;
         display: block;
     }
 
-    .gallery-item:hover,
-    .timeline-item:hover,
-    .music-item:hover {
-        transform: translateY(-5px);
-    }
-
 .image-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 1rem;
@@ -130,6 +120,7 @@
         font-size: 1.8rem;
         color: var(--primary-color);
         margin-bottom: 1rem;
+        text-align: left; /* 让标题文字靠左对齐 */
     }
 
     .timeline-item .description {
@@ -137,6 +128,7 @@
         color: #555;
         line-height: 1.6;
         margin-top: 1rem;
+        text-align: left; /* 让描述文字靠左对齐 */
     }
 
 /* 音乐部分样式优化 */

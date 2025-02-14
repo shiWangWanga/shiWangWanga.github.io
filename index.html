@@ -31,7 +31,6 @@
     <!-- Research 部分 -->
     <section id="research" class="page-section" style="background: var(--light-bg)">
         <h2 class="section-title">Scientific Research</h2>
-        <p class="research-intro">在科研领域，我致力于探索各种有趣的课题，不断挑战自我，追求知识的边界。以下是我一些精选的研究项目和成果展示。</p>
         <div class="gallery-grid">
             <!-- Aerospace Gripper -->
             <div class="gallery-item clickable" onclick="window.location.href='research.html#photo1'">
@@ -56,21 +55,6 @@
                     <h3>Origami Machine</h3>
                     <p>Guangzhou · 2024.12</p>
                 </div>
-            </div>
-        </div>
-        <div class="research-details">
-            <h3>研究项目详细介绍</h3>
-            <div class="research-item">
-                <h4>Aerospace Gripper</h4>
-                <p>该项目聚焦于城市几何形态的研究，通过实地考察和数据分析，探索城市空间的布局规律和发展趋势。在上海进行的实地调研中，我们收集了大量的城市几何数据，运用先进的算法和模型进行分析，为城市规划和设计提供了有价值的参考。</p>
-            </div>
-            <div class="research-item">
-                <h4>Resilient Machine</h4>
-                <p>在环境科学研究项目中，我们关注于环境污染的监测和治理。通过在不同地区设置监测点，实时收集环境数据，分析环境污染的来源和分布规律。同时，我们还开展了一系列的治理实验，探索有效的环境污染治理方法。</p>
-            </div>
-            <div class="research-item">
-                <h4>Origami Machine</h4>
-                <p>此项目旨在探索人工智能技术在医疗领域的应用潜力。我们利用深度学习算法对大量的医疗影像数据进行分析，开发出了一套智能诊断系统，能够快速准确地诊断疾病。该系统在临床实践中取得了良好的效果，为医疗行业的发展带来了新的机遇。</p>
             </div>
         </div>
     </section>
@@ -150,7 +134,7 @@
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="./pics/robocon2024-2.jpg" alt="2024 ROBOCON Final">
+                        <img src="./pics/robocon2024-2.png" alt="2024 ROBOCON Final">
                         <div class="image-info">
                             <p>决赛时刻 · 2024.07</p>
                         </div>
@@ -225,18 +209,6 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-            });
-        });
-
-        // 页面滚动动画
-        window.addEventListener('scroll', () => {
-            const elements = document.querySelectorAll('.gallery-item, .timeline-item, .music-item');
-            elements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight * 0.8) {
-                    el.style.opacity = '1';
-                    el.style.transform = 'translateY(0)';
-                }
             });
         });
     </script>
