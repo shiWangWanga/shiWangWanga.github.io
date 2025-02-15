@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 添加以下样式让视频完整显示 */
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- 欢迎标语 -->
-    <div class="welcome-screen">
-        <h1>Welcome to my space</h1>
-    </div>
-
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
@@ -28,11 +31,16 @@
         </div>
     </nav>
 
+    <!-- 欢迎标语 -->
+    <div class="welcome-screen">
+        <h1>Welcome to My Creative Space</h1>
+        <p>Explore my journey through research, robotics, music, photography, and painting.</p>
+    </div>
+
     <!-- Research 部分 -->
-    <section id="research" class="page-section" style="background: var(--light-bg)">
+    <section id="research" class="page-section">
         <h2 class="section-title">Scientific Research</h2>
         <div class="gallery-grid">
-            <!-- Aerospace Gripper -->
             <div class="gallery-item clickable" onclick="window.location.href='research.html#photo1'">
                 <img src="./pics/gripper.png" alt="Aerospace Gripper">
                 <div class="image-info">
@@ -40,7 +48,9 @@
                     <p>Shanghai · 2024.09</p>
                 </div>
             </div>
-            <!-- Resilient Machine -->
+        </div>
+
+        <div class="gallery-grid">
             <div class="gallery-item clickable" onclick="window.location.href='research.html#project1'">
                 <img src="./pics/drone.png" alt="Resilient Machine">
                 <div class="image-info">
@@ -48,7 +58,6 @@
                     <p>Shanghai · 2025.01</p>
                 </div>
             </div>
-            <!-- Origami Machine -->
             <div class="gallery-item clickable" onclick="window.location.href='research.html#project2'">
                 <img src="./pics/origami.png" alt="Origami Machine">
                 <div class="image-info">
@@ -59,11 +68,10 @@
         </div>
     </section>
 
-    <!-- Roboteam 页面 -->
+    <!-- Roboteam 部分 -->
     <section id="roboteam" class="page-section">
         <h2 class="section-title">Roboteam Experience</h2>
         <div class="timeline">
-            <!-- 2021 ROBOCON -->
             <div class="timeline-item clickable" onclick="window.location.href='roboteam.html#2021robocon'">
                 <h3>2021 ROBOCON</h3>
                 <div class="gallery-grid">
@@ -82,74 +90,14 @@
                 </div>
                 <p class="description">2021年是我加入ROBOCON的第一年，团队合作和机器人设计让我深刻体会到工程实践的乐趣。</p>
             </div>
-
-            <!-- 2022 ROBOCON -->
-            <div class="timeline-item clickable" onclick="window.location.href='roboteam.html#2022robocon'">
-                <h3>2022 ROBOCON</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="./pics/robocon2022-1.jpg" alt="2022 ROBOCON Competition">
-                        <div class="image-info">
-                            <p>比赛现场 · 2022.07</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./pics/robocon2022-2.jpg" alt="2022 ROBOCON Award">
-                        <div class="image-info">
-                            <p>获奖时刻 · 2022.07</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="description">2022年我们团队在全国赛中取得了优异成绩，这段经历让我更加坚定了对机器人技术的热爱。</p>
-            </div>
-
-            <!-- 2023 ROBOCON -->
-            <div class="timeline-item clickable" onclick="window.location.href='roboteam.html#2023robocon'">
-                <h3>2023 ROBOCON</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="./pics/robocon2023-1.jpg" alt="2023 ROBOCON Design">
-                        <div class="image-info">
-                            <p>机器人设计 · 2023.04</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./pics/robocon2023-2.jpg" alt="2023 ROBOCON Teamwork">
-                        <div class="image-info">
-                            <p>团队讨论 · 2023.05</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="description">2023年我担任团队队长，带领大家完成了更具挑战性的任务，团队精神在这一年得到了充分体现。</p>
-            </div>
-
-            <!-- 2024 ROBOCON -->
-            <div class="timeline-item clickable" onclick="window.location.href='roboteam.html#2024robocon'">
-                <h3>2024 ROBOCON</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="./pics/robocon2024-1.jpg" alt="2024 ROBOCON Preparation">
-                        <div class="image-info">
-                            <p>备赛现场 · 2024.03</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./pics/robocon2024-2.png" alt="2024 ROBOCON Final">
-                        <div class="image-info">
-                            <p>决赛时刻 · 2024.07</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="description">2024年是我本科的最后一年，ROBOCON不仅让我收获了技术，更让我懂得了坚持和团队合作的意义。</p>
-            </div>
+            <!-- 其他年份的ROBOCON部分 -->
         </div>
     </section>
 
-    <!-- Music 精选部分 -->
-    <section id="music" class="page-section" style="background: var(--light-bg)">
+    <!-- Music 部分 -->
+    <section id="music" class="page-section">
         <h2 class="section-title">Music Journey</h2>
         <div class="music-container">
-            <!-- 钢琴演奏作为精选展示 -->
             <div class="music-item clickable" onclick="window.location.href='music.html#piano'">
                 <h3>钢琴演奏</h3>
                 <div class="gallery-grid">
@@ -171,13 +119,19 @@
         </div>
     </section>
 
-    <!-- Photography 精选部分 -->
+    <!-- Photography 部分 -->
     <section id="photography" class="page-section">
         <h2 class="section-title">Photography</h2>
         <div class="gallery-grid">
-            <!-- 精选一张照片 -->
             <div class="gallery-item clickable" onclick="window.location.href='photography.html#photo1'">
                 <img src="./pics/photo2.jpg" alt="Urban Geometry">
+                <div class="image-info">
+                    <h3>Urban Geometry</h3>
+                    <p>Shanghai · 2023.08</p>
+                </div>
+            </div>
+            <div class="gallery-item clickable" onclick="window.location.href='photography.html#photo3'">
+                <img src="./pics/photo3.jpg" alt="Urban Geometry">
                 <div class="image-info">
                     <h3>Urban Geometry</h3>
                     <p>Shanghai · 2023.08</p>
@@ -186,11 +140,10 @@
         </div>
     </section>
 
-    <!-- Painting 精选部分 -->
-    <section id="painting" class="page-section" style="background: var(--light-bg)">
+    <!-- Painting 部分 -->
+    <section id="painting" class="page-section">
         <h2 class="section-title">Painting</h2>
         <div class="gallery-grid">
-            <!-- 精选一张画作 -->
             <div class="gallery-item clickable" onclick="window.location.href='painting.html#painting20170819'">
                 <img src="./pics/painting20170819.png" alt="Abstract Art">
                 <div class="image-info">
@@ -201,6 +154,19 @@
         </div>
     </section>
 
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Creative Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script>
         // 平滑滚动效果
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -209,6 +175,18 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+
+        // 页面滚动动画
+        window.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.gallery-item, .timeline-item, .music-item');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
             });
         });
     </script>

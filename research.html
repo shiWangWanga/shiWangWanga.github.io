@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Details</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -23,33 +24,62 @@
     <section id="research" class="page-section">
         <h2 class="section-title">Scientific Research</h2>
         <p class="research-intro">在科研领域，我致力于探索各种有趣的课题，不断挑战自我，追求知识的边界。以下是我详细的研究项目和成果展示。</p>
-        <div class="gallery-grid">
-            <!-- Aerospace Gripper -->
-            <div class="gallery-item clickable" onclick="window.location.href='research.html#photo1'">
-                <img src="./pics/gripper.png" alt="Aerospace Gripper">
-                <div class="image-info">
-                    <h3>Aerospace Gripper</h3>
-                    <p>Shanghai · 2024.09</p>
-                </div>
-            </div>
-            <!-- Resilient Machine -->
-            <div class="gallery-item clickable" onclick="window.location.href='research.html#project1'">
-                <img src="./pics/drone.png" alt="Resilient Machine">
-                <div class="image-info">
-                    <h3>Resilient Machine</h3>
-                    <p>Shanghai · 2025.01</p>
-                </div>
-            </div>
-            <!-- Origami Machine -->
-            <div class="gallery-item clickable" onclick="window.location.href='research.html#project2'">
-                <img src="./pics/origami.png" alt="Origami Machine">
-                <div class="image-info">
-                    <h3>Origami Machine</h3>
-                    <p>Guangzhou · 2024.12</p>
-                </div>
-            </div>
+
+        <!-- Aerospace Gripper 板块 -->
+        <div class="timeline-item">
+            <h3>Aerospace Gripper</h3>
+            <p>研发时间：Shanghai · 2024.09</p>
+            <img src="./pics/gripper.png" alt="Aerospace Gripper">
+            <p>本项目专注于设计和开发一款适用于航空航天领域的高性能抓取器。</p>
+            <ul>
+                <li>采用新型材料，减轻重量的同时提高了抓取器的强度和耐用性。</li>
+                <li>创新的机械结构设计，使其能够适应复杂的太空环境并完成高精度的抓取任务。</li>
+                <li>通过模拟实验和实际测试，验证了该抓取器在多种场景下的可靠性和稳定性。</li>
+            </ul>
+            
+        </div>
+
+        <!-- Resilient Machine 板块 -->
+        <div class="timeline-item">
+            <h3>Resilient Machine</h3>
+            <p>研发时间：Shanghai · 2025.01</p>
+            <img src="./pics/drone.png" alt="Resilient Machine">
+            <p>旨在打造一款具有高韧性和适应性的智能机器，以应对复杂多变的工作环境。</p>
+            <ul>
+                <li>运用先进的传感器技术，实现对环境变化的实时感知和快速响应。</li>
+                <li>独特的算法优化，使机器在面对突发情况时能够自主调整策略，保持稳定运行。</li>
+                <li>经过多轮实地测试，该机器在极端条件下展现出了卓越的性能和可靠性。</li>
+            </ul>
+
+        </div>
+
+        <!-- Origami Machine 板块 -->
+        <div class="timeline-item">
+            <h3>Origami Machine</h3>
+            <p>研发时间：Guangzhou · 2024.12</p>
+            <img src="./pics/origami.png" alt="Origami Machine">
+            <p>探索将折纸艺术与机械工程相结合，开发出具有独特变形能力的折纸机器。</p>
+            <ul>
+                <li>基于折纸原理设计的可折叠结构，实现了机器在不同形态之间的快速转换。</li>
+                <li>采用智能控制技术，精确控制折纸过程，确保机器的准确性和稳定性。</li>
+                <li>该项目成果为未来的空间探索和微型机器人领域提供了新的思路和方法。</li>
+            </ul>
+
         </div>
     </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Creative Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // 平滑滚动效果
@@ -64,7 +94,7 @@
 
         // 页面滚动动画
         window.addEventListener('scroll', () => {
-            const elements = document.querySelectorAll('.gallery-item, .research-item');
+            const elements = document.querySelectorAll('.research-section');
             elements.forEach(el => {
                 const rect = el.getBoundingClientRect();
                 if (rect.top < window.innerHeight * 0.8) {
