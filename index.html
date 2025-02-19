@@ -1,195 +1,1247 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* 添加以下样式让视频完整显示 */
-        video {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1>Creative Portfolio</h1>
-            <div class="nav-links">
-                <a href="research.html">Research</a>
-                <a href="roboteam.html">Roboteam</a>
-                <a href="music.html">Music</a>
-                <a href="photography.html">Photography</a>
-                <a href="painting.html">Painting</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- 欢迎标语 -->
-    <div class="welcome-screen">
-        <h1>Welcome to My Creative Space</h1>
-        <p>Explore my journey through research, robotics, music, photography, and painting.</p>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/ww-avatar.png" alt="Cici" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Cici</h1>
+
+          <p class="title">Postgraduate Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">983774478@qq.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">183 0795 9706</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-11-22">November 22, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Tongji University, Shanghai, China</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+            <p>
+                I'm a postgraduate from Shanghai, China, working in web development and print media.
+                I enjoy turning complex problems into simple, beautiful and intuitive designs.
+            </p>
+
+            <p>
+                My job is to . 
+                I am currently mainly researching the design of rotary wing unmanned aerial vehicles.
+            </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research</h4>
+
+                <p class="service-item-text">
+                    The main research direction is Mechanical design, robot perception and control algorithms.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Competitions</h4>
+
+                  <p class="service-item-text">
+                      High quality robot competition (ROBOCON) during undergraduate studies
+                  </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Music</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Painting & Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Relationships</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+
+              <span>2007 — 2008</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+              <span>2006 — 2007</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Research</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                  <h5 class="h5">Research</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+          <header>
+              <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+              <ul class="filter-list">
+                  <li class="filter-item">
+                      <button class="active" data-filter-btn>All</button>
+                  </li>
+                  <li class="filter-item">
+                      <button data-filter-btn>Research</button>
+                  </li>
+                  <li class="filter-item">
+                      <button data-filter-btn>Roboteam</button>
+                  </li>
+                  <li class="filter-item">
+                      <button data-filter-btn>Music</button>
+                  </li>
+                  <li class="filter-item">
+                      <button data-filter-btn>Painting</button>
+                  </li>
+                  <li class="filter-item">
+                      <button data-filter-btn>Photography</button>
+                  </li>
+              </ul>
+
+              <div class="filter-select-box">
+
+                  <button class="filter-select" data-select>
+                      <div class="select-value" data-selecct-value>Select category</div>
+                      <div class="select-icon">
+                          <ion-icon name="chevron-down"></ion-icon>
+                      </div>
+                  </button>
+
+                  <ul class="select-list">
+                      <li class="select-item">
+                          <button data-select-item>All</button>
+                      </li>
+                      <li class="select-item">
+                          <button data-select-item>Research</button>
+                      </li>
+                      <li class="select-item">
+                          <button data-select-item>Roboteam</button>
+                      </li>
+                      <li class="select-item">
+                          <button data-select-item>Music</button>
+                      </li>
+                      <li class="select-item">
+                          <button data-select-item>Painting</button>
+                      </li>
+                      <li class="select-item">
+                          <button data-select-item>Photography</button>
+                      </li>
+                  </ul>
+              </div>
+
+              <ul class="project-list">
+                  <li class="project-item  active" data-filter-item data-category="photography">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo1.jpg" alt="finance" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">Me, NCU</h3>
+                          <p class="project-category">Photography</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="photography">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo2.jpg" alt="orizon" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">千岛湖</h3>
+                          <p class="project-category">Photography</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="photography">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo3.jpg" alt="fundo" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">Wuxi, Jiangsu</h3>
+                          <p class="project-category">Photography</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="photography">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo4.jpg" alt="brawlhalla" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">Miaomiao</h3>
+                          <p class="project-category">Photography</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="research">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo5.jpg" alt="dsm." loading="lazy">
+                          </figure>
+                          <h3 class="project-title">IM3 group</h3>
+                          <p class="project-category">Research</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="painting">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo6.jpg" alt="metaspark" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">2021.08 · Spaceman</h3>
+                          <p class="project-category">Painting</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="music">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo7.jpg" alt="summary" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">with solsol</h3>
+                          <p class="project-category">Music</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="music">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo9.png" alt="arrival" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">Mars concert</h3>
+                          <p class="project-category">Music</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="painting">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo10.jpg" alt="arrival" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">2022.02 · Me and my mom</h3>
+                          <p class="project-category">Painting</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="roboteam">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo8.jpg" alt="task manager" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">Show my work</h3>
+                          <p class="project-category">Roboteam</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="roboteam">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo11.jpg" alt="arrival" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">2023 ROBOCON · Me and my teammate</h3>
+                          <p class="project-category">Roboteam</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="roboteam">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo12.jpg" alt="arrival" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">2022 ROBOCON · Me and my teammate</h3>
+                          <p class="project-category">Roboteam</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="roboteam">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo13.jpg" alt="arrival" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">2023 ROBOCON · Me and my teammate</h3>
+                          <p class="project-category">Roboteam</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="music">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo14.png" alt="arrival" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">2023 HONGKONG · Mars concert</h3>
+                          <p class="project-category">Music</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="roboteam">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo15.jpg" alt="arrival" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">2021 ROBOCON · Competition Opening</h3>
+                          <p class="project-category">Roboteam</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="painting">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo16.png" alt="arrival" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">forget</h3>
+                          <p class="project-category">Painting</p>
+                      </a>
+                  </li>
+
+                  <li class="project-item  active" data-filter-item data-category="painting">
+                      <a href="#">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/photo17.png" alt="arrival" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">2024.02 · Me and solsol</h3>
+                          <p class="project-category">Painting</p>
+                      </a>
+                  </li>
+
+              </ul>
+          </section>
+      </article>
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/story1.jpg" alt="ROBOCON for the 2024 season" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-07-04">Jul 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">ROBOCON for the 2024 season</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/story2.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The Story of Me and Mars Concert</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
 
-    <!-- Research 部分 -->
-    <section id="research" class="page-section">
-        <h2 class="section-title">Scientific Research</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item clickable" onclick="window.location.href='research.html#photo1'">
-                <img src="./pics/gripper.png" alt="Aerospace Gripper">
-                <div class="image-info">
-                    <h3>Aerospace Gripper</h3>
-                    <p>Shanghai · 2024.09</p>
-                </div>
-            </div>
-        </div>
+  </main>
 
-        <div class="gallery-grid">
-            <div class="gallery-item clickable" onclick="window.location.href='research.html#project1'">
-                <img src="./pics/drone.png" alt="Resilient Machine">
-                <div class="image-info">
-                    <h3>Resilient Machine</h3>
-                    <p>Shanghai · 2025.01</p>
-                </div>
-            </div>
-            <div class="gallery-item clickable" onclick="window.location.href='research.html#project2'">
-                <img src="./pics/origami.png" alt="Origami Machine">
-                <div class="image-info">
-                    <h3>Origami Machine</h3>
-                    <p>Guangzhou · 2024.12</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Roboteam 部分 -->
-    <section id="roboteam" class="page-section">
-        <h2 class="section-title">Roboteam Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item clickable" onclick="window.location.href='roboteam.html#2021robocon'">
-                <h3>2021 ROBOCON</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="./pics/robocon2021-2.jpg" alt="2021 ROBOCON Team">
-                        <div class="image-info">
-                            <p>比赛开幕 · 2021.05</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./pics/robocon2021-1.jpg" alt="2021 ROBOCON Robot">
-                        <div class="image-info">
-                            <p>机器人调试 · 2021.06</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="description">2021年是我加入ROBOCON的第一年，团队合作和机器人设计让我深刻体会到工程实践的乐趣。</p>
-            </div>
-            <!-- 其他年份的ROBOCON部分 -->
-        </div>
-    </section>
 
-    <!-- Music 部分 -->
-    <section id="music" class="page-section">
-        <h2 class="section-title">Music Journey</h2>
-        <div class="music-container">
-            <div class="music-item clickable" onclick="window.location.href='music.html#piano'">
-                <h3>钢琴演奏</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="./pics/piano1.jpg" alt="Piano Performance">
-                        <div class="image-info">
-                            <p>演奏会 · 2023.10</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <video controls>
-                            <source src="videos/piano-video.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                <p class="description">钢琴是我生活中不可或缺的一部分，它让我在忙碌的学习中找到内心的平静。</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Photography 部分 -->
-    <section id="photography" class="page-section">
-        <h2 class="section-title">Photography</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item clickable" onclick="window.location.href='photography.html#photo1'">
-                <img src="./pics/photo2.jpg" alt="Urban Geometry">
-                <div class="image-info">
-                    <h3>Urban Geometry</h3>
-                    <p>Shanghai · 2023.08</p>
-                </div>
-            </div>
-            <div class="gallery-item clickable" onclick="window.location.href='photography.html#photo3'">
-                <img src="./pics/photo3.jpg" alt="Urban Geometry">
-                <div class="image-info">
-                    <h3>Urban Geometry</h3>
-                    <p>Shanghai · 2023.08</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Painting 部分 -->
-    <section id="painting" class="page-section">
-        <h2 class="section-title">Painting</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item clickable" onclick="window.location.href='painting.html#painting20170819'">
-                <img src="./pics/painting20170819.png" alt="Abstract Art">
-                <div class="image-info">
-                    <h3>Abstract Art</h3>
-                    <p>2023.07</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2024 Creative Portfolio. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-    <script>
-        // 平滑滚动效果
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        // 页面滚动动画
-        window.addEventListener('scroll', () => {
-            const elements = document.querySelectorAll('.gallery-item, .timeline-item, .music-item');
-            elements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight * 0.8) {
-                    el.style.opacity = '1';
-                    el.style.transform = 'translateY(0)';
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
